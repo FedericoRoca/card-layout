@@ -1,17 +1,21 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-const CardLayout = () => {
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import "./CardLayout.css";
+const CardLayout = ({ data }) => {
+  const { job, location } = data;
   return (
-    <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+    <Card
+      className="text-center"
+      style={{ width: "18rem", margin: "1rem" }}
+    >
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Card.Text>{location}</Card.Text>
+        <Card.Title>{job}</Card.Title>
+        <hr />
+        <Button variant="primary" className="btn-round-lg">
+          APPLY
+        </Button>
       </Card.Body>
     </Card>
   );
