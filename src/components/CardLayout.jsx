@@ -14,9 +14,9 @@ const CardLayout = ({ data }) => {
       className="text-center"
       style={{ width: "18rem", margin: "1rem" }}
     >
-      <Card.Body>
+      <Card.Body className="wrapper">
         <Card.Text>{location}</Card.Text>
-        <Card.Title>{job}</Card.Title>
+        <Card.Title  className="overflow">{job}</Card.Title>
         <hr />
         <Button variant="primary" className="btn-round-lg" onClick={handleShow}>
           APPLY

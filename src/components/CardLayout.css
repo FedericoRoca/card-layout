@@ -1,4 +1,10 @@
 .btn-round-lg {
   width: 90%;
-  border-radius: 22px;
+  border-radius: 22px !important;
 }
+.overflow {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 300px;
+  }
